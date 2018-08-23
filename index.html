@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>сервис</title>
+        <link rel="stylesheet" href="css/tabs.css">
+        <link rel="stylesheet" href="css/acceptance.css">
+    </head>
+
+    <body>
+        <div id="tabs">
+            <div class="tab whiteborder">Приемка</div>
+            <div class="tab">Текучка</div>
+            <div class="tab">Выдача</div>
+            <div class="tabContent">
+                <div id="timedisplay"></div>
+                <div id="Order">Номер заказа</div>
+                <form class="contact_form" action="#" method="post" name="contact_form">
+                    <ul>
+                        <li>
+                            <h2>Оформление аппарата в ремонт</h2>
+                            <span class="required_notification">* Поля обязательные для заполнения</span>
+                        </li>
+                        <li>
+                            <label for="name">Наименование модели</label>
+                            <input type="text"  placeholder="Samsung" required />
+                        </li>
+                        <li>
+                            <label for="name">Серийный номер (IMEI)</label>
+                            <input type="text"  placeholder="12345678901234" required pattern="\d+$"/>
+                            <span class="form_hint">Proper format "12345678901234"</span>
+                        </li>
+                        <li>
+                            <label for="name">Ф.И.О. Клиента</label>
+                            <input type="text"  placeholder="Иванов" required/>
+                        </li>
+                        <li>
+                            <label for="name">Телефон клиента</label>
+                            <input type="text"  placeholder="+375-29-1234567" required pattern="[+]\d+$"/>
+                            <span class="form_hint">Proper format "+375295878887"</span>
+                        </li>
+                        <li>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" placeholder="name@example.com" required />
+                            <span class="form_hint">Proper format "name@example.com"</span>
+                        </li>
+                        <li>
+                            <label for="website">Website:</label>
+                            <input type="url" name="website" placeholder="http://johndoe.com" required pattern="(http|https)://.+"/>
+                            <span class="form_hint">Proper format "http://someaddress.com"</span>
+                        </li>
+                        <li>
+                            <label for="message">Message:</label>
+                            <textarea name="message" cols="40" rows="6" required ></textarea>
+                        </li>
+                        <li>
+                            <button class="submit" type="submit">Submit Form</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="tabContent">2</div>
+            <div class="tabContent">3</div>
+        </div>
+
+        <script src="js/tabs.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
